@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@theme {
+  --color-wheat-50: #fefbeb;
+  --color-wheat-100: #fef3c7;
+  --color-wheat-200: #fde68a;
+  --color-wheat-300: #fcd34d;
+  --color-wheat-400: #fbbf24;
+  --color-wheat-500: #f59e0b;
+  --color-wheat-600: #d97706;
+  --color-wheat-700: #b45309;
+  --color-wheat-800: #92400e;
+  --color-wheat-900: #78350f;
+
+  --color-brand-green-50: #f0fdf4;
+  --color-brand-green-100: #dcfce7;
+  --color-brand-green-200: #bbf7d0;
+  --color-brand-green-600: #16a34a;
+  --color-brand-green-700: #15803d;
+  --color-brand-green-800: #166534;
+  --color-brand-green-900: #14532d;
+
+  --color-cream: #faf7f2;
+  --color-cream-dark: #f3ede2;
+
+  --font-serif: var(--font-playfair);
+  --font-sans: var(--font-inter);
+}
+
+:root {
+  --background: #faf7f2;
+  --foreground: #1c1917;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+/* Custom utility class for gold text/gradients and premium effects */
+.text-gradient-gold {
+  background: linear-gradient(135deg, #b45309 0%, #d97706 50%, #f59e0b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-green {
+  background: linear-gradient(135deg, #14532d 0%, #15803d 60%, #16a34a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Custom animations */
+@keyframes rotate-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-rotate-slow {
+  animation: rotate-slow 20s linear infinite;
+}
